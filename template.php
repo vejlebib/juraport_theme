@@ -101,7 +101,7 @@ function juraport_theme_preprocess_field(&$variables, $hook) {
       $label = '<i class="fa fa-book fa-2x"></i><span class="field-label-text">' . $label . '</span>'; 
     }
     else if ($field_name == 'field_jura_subject_network') {
-      $label = '<i class="fa fa-globe fa-2x"></i><span class="field-label-text">' . $label . '</span>';  
+      $label = '<i class="fa fa-group fa-2x"></i><span class="field-label-text">' . $label . '</span>';  
     }    
     $variables['label'] = $label;
   }
