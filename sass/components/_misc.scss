@@ -158,7 +158,7 @@
 /* Wrapper for website name and slogan. */
 .header__name-and-slogan {
   float: left;
-  height: 160px;
+  height: 160px;  
   position: relative;
 }
 
@@ -238,35 +238,62 @@
 /**
  * Footer
  */
+
+#footer .block,
+ul.footer-menu {
+  margin: 0;
+}
+
+/* Styling of footer-menu */
 #footer {
-  background: $footer-background-color;
-  padding: 0;
   ul.footer-menu {
-    display: table; 
-    width: 100%;
+    @include clearfix();
+    background: $footer-background-color;
     padding: 0;
+
     li {
-      @include box-sizing(border-box);
-      padding: 1.5em 0;
-      width: 20%;
-      display: table-cell;
       list-style: none;
       text-align: center;
-      border-right: 2px solid white;
+      padding: 1.5em 0;
+      border-bottom: 2px solid white;
+
       &:last-of-type {
         border: none;
       }
+
       a {
         text-decoration: none;
         color: white;
       }
     }
   }
-  /* Remove the vertical rythm applied to blocks and lists in normalize.scss */
-  .block,
-  ul.footer-menu {
-    margin: 0;
-  } 
+}
+
+/* Adjust borders for 3 items on each row */
+@media all and (min-width: 480px) and (max-width: 959px) {
+  #footer ul.footer-menu {
+    li {
+      border-bottom: none;
+      border-right: 2px solid white;
+
+      /* Only the first 3 menu items need bottom border */
+      &:nth-child(-n+3) {
+        border-bottom: 2px solid white;
+      }
+
+      &:nth-child(3) {
+        border-right: none;
+      }
+    }
+  }
+}
+
+/* Adjust borders for 6 items in 1 row */
+@media all and (min-width: 960px) {
+  #footer ul.footer-menu li {
+    border-bottom: none;
+    border-right: 2px solid white;
+  }
 }
 
 /**
