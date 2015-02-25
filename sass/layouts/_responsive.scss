@@ -37,7 +37,7 @@ $zen-auto-include-item-base: false;
 #header,
 #content,
 .region-sidebar-first,
-.region-sidebar-second
+.region-sidebar-second,
 #footer li.menu__item {
   // See the note about $zen-auto-include-item-base above.
   @include zen-grid-item-base();
