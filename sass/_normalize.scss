@@ -99,6 +99,12 @@ body {
   padding: 0;
 }
 
+@media all and (min-width: 960px) {
+  body {
+    background: url("../images/Juraportbaggrund.jpg");
+  }
+}
+
 /**
  * Links
  *
