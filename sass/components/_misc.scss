@@ -117,19 +117,24 @@
 }
 
 .column {
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .content-inner-wrapper {
   padding-left: 20px;
   padding-right: 20px;
-} 
+}
+
+#main {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 /**
  * Page
  */
 #page {
-  background: lightgrey;
+  @include alpha-background-color(rgba(black, 0.2), $background-color);
 }
 
 /**
@@ -137,36 +142,48 @@
  */
 #header {
   background: $header-background-color;
-  padding-top: 5px;
+  padding: 1.5% 10px 1% 10px;
+}
+
+.header__logo-wrapper {
+  width: 10%;
+  float: left
 }
 
 /* Wrapping link for logo. */
 .header__logo {
-  float: left;
-  margin: 0;
-  padding: 0.625em 15px;
-  height: 160px; // h/w = 1.578125
-  width: 100px; 
-}
-
-/* Logo image. */
-.header__logo-image { 
-  vertical-align: bottom; 
+  display: block;
 }
 
 /* Wrapper for website name and slogan. */
 .header__name-and-slogan {
-  float: left;
-  height: 160px;  
+  @include clearfix();
+  margin-left: 10%;
   position: relative;
 }
 
 /* The name of the website. */
 .header__site-name {
+  @include adjust-font-size-to($title-fontsize-mobile);
   margin: 0;
+  line-height: 1em;
   position: absolute;
-  bottom: 0; /* place the site-title at the bottom in the header */
-  @include adjust-font-size-to($site-title-fontsize);
+  bottom: 8%;
+}
+
+@media all and (min-width: 480px) {
+  .header__site-name {
+    @include adjust-font-size-to($title-fontsize-tablet);
+    line-height: 1em;
+    bottom: 5%;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .header__site-name {
+    @include adjust-font-size-to($title-fontsize-desktop);
+    line-height: 1em;
+  } 
 }
 
 /* The link around the name of the website. */
@@ -245,6 +262,7 @@ ul.footer-menu {
 
 /* Styling of footer-menu */
 #footer {
+  padding-top: 10px;
   ul.footer-menu {
     @include clearfix();
     background: $footer-background-color;
