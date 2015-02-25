@@ -111,10 +111,9 @@
  */
 .content-inner-wrapper,
 .sidebar-inner-wrapper {
-  //@include border-radius();
   background: white;
   padding: 0 10px 10px 10px;
-  overflow: hidden; /* To prevent margin collapse */
+  overflow: hidden; /* Prevents margins from text pushing everything down */
 }
 
 .column {
