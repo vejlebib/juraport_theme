@@ -653,7 +653,15 @@ span.field-label {
 
 /* Block wrapper. */
 .block {
-  margin-bottom: rhythm(1);
+  margin-bottom: rhythm(2);
+
+  button,
+  html input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  a {
+    width: 100%;
+  }
 }
 
 /**
