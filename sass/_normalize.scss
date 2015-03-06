@@ -226,6 +226,11 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-light, $arial;
+  color: $header-text-color;
+}
+
+h3, h4, h5, h6 {
+  font-family: $font-regular, $arial;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
