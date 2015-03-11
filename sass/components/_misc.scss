@@ -1143,9 +1143,7 @@ tr.selected td {
 
   /* Jump menus */
   select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    @include appearance(none);
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 1.5em;
