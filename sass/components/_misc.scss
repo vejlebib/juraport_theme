@@ -1153,6 +1153,7 @@ tr.selected td {
     background: transparent;
     border: 2px solid $header-background-color;
 
+    /* IE fix for appearance none (see above) */
     &::-ms-expand {
       display: none; /* Tell IE not to show arrow */
     }
