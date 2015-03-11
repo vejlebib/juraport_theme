@@ -79,12 +79,14 @@ $arial:                Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $courier:              "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Create variables for our custom font: Aleo.
-$font-light:           "aleolight";
-$font-light-italic:    "aleolightitalic";
-$font-regular:         "aleoregular";
-$font-regular-italic:  "aleoitalic";
-$font-bold:            "aleobold";
-$font-bold-italic:     "aleobolditalic";
+$font-light:              "aleolight";
+$font-light-italic:       "aleolightitalic";
+$font-regular:            "aleoregular";
+$font-regular-italic:     "aleoitalic";
+$font-bold:               "aleobold";
+$font-bold-italic:        "aleobolditalic";
+// Fontawesome
+$base-icon-library-font:  "FontAwesome";
 
 // Now create some variables for the font stacks we want to use on this site.
 $base-font-family: $font-regular, $arial; // The font family set on the html element.
