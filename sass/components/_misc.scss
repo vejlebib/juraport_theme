@@ -1103,3 +1103,58 @@ tr.selected td {
     margin-right: 0.5em;
   }
 }
+
+/**
+ * Jura subject overview block
+ */
+#block-juraport-jura-subject-jura-subject-overview {
+
+  .jura-subject-overview-link {
+    text-decoration: none;
+    line-height: normal;
+    @include box-sizing(border-box);
+    @include sassy-button("flat", 0, $base-font-size, $header-background-color);
+    text-align: center;
+    &:active, &.active {
+      font-weight: normal;
+    }
+  }
+
+  .form-type-select {
+    position: relative;
+    /* This is an easy fix for allowing click events being passed through the */
+    /* after-element to the select box below. */
+    /* */
+    pointer-events: none;
+
+    /* Arrows in select box */
+    &:after {
+      position: absolute;
+      right: 0.5em;
+      top: 0.3em;
+      font-family: $base-icon-library-font;
+      color: $header-background-color;
+      content: $fa-var-chevron-down;
+    }
+  }
+
+  /* Jump menus */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1.5em;
+    pointer-events: all;
+    height: 2.1875em; /* 35px/16px */
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid $header-background-color;
+
+    &::-ms-expand {
+      display: none; /* Tell IE not to show arrow */
+    }
+  }
+
+}
