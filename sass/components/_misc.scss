@@ -1125,7 +1125,9 @@ tr.selected td {
     position: relative;
     /* This is an easy fix for allowing click events being passed through the */
     /* after-element to the select box below. */
-    /* */
+    /* This doesn't work in IE though, so a javascript solution might need to */
+    /* replace this in the future. See: */
+    /* http://stackoverflow.com/questions/5855135/css-pointer-events-property-alternative-for-ie */
     pointer-events: none;
 
     /* Arrows in select box */
