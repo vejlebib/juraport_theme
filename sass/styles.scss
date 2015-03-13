@@ -9,6 +9,9 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";	
 
+/* FontAwesome */
+@import "fontawesome/font-awesome";
+
 /* HTML element (SMACSS base) rules */
 @import "normalize";
 
@@ -19,9 +22,6 @@
 @import "components/misc";
 // Optionally, add your own components here.
 @import "print";
-
-/* FontAwesome */
-@import "fontawesome/font-awesome";
 
 /* Aleo font */
 @import "../font/aleo/stylesheet.css"
