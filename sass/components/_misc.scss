@@ -1160,3 +1160,36 @@ tr.selected td {
   }
 
 }
+
+/**
+ * Juraport info box viewer block
+ */
+#block-juraport-jura-subject-juraport-info-box-viewer {
+
+  .field,
+  .entity-field-collection-item  {
+    /* Establish a vertical rhythm between field in the info boxes */
+    @include output-rhythm(margin, rhythm(1) 0);
+  }
+
+  .entity-field-collection-item {
+    padding: 0 10px;
+    border: 2px solid $header-background-color;
+  }
+
+  .field-name-field-information-box-title {
+    font-size: $h3-font-size;
+    color: $header-text-color;
+    border-bottom: 2px solid $header-background-color;
+  }
+
+  .field-name-field-information-box-more a {
+    display: inline-block;
+    text-decoration: none; /* Looks better without underline here */
+
+    &:after {
+      content: "...";
+    }
+  }
+
+}
