@@ -25,10 +25,10 @@
     print render($content);
   ?>
 
-  <?php if ($display_submitted): ?>
-    <p class="submitted">
-      <?php print $user_picture; ?>
-      <?php print $submitted; ?>
+  <?php if ($display_maintained_by): ?>
+    <p class="jura-subject-maintained-by">
+      <?php print $maintained_by; ?>
+      <?php print render($last_updated); ?>
     </p>
   <?php endif; ?>
 
