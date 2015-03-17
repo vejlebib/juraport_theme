@@ -2,7 +2,7 @@ name        = Juraport theme
 core        = 7.x
 base theme  = zen
 screenshot  = juraport_screenshot.png
-version     = 7.x-0.1.0
+version     = 7.x-0.2.0
 
 ; Remove the system's menu and message styling since Zen has its own.
 stylesheets[all][] = system.menus.css
