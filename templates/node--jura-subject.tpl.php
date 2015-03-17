@@ -20,8 +20,7 @@
   <?php endif; ?>
 
   <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
+    // Hide the links so we can render them later.
     hide($content['links']);
     print render($content);
   ?>
@@ -38,7 +37,5 @@
   <?php endif; ?>
 
   <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
 
 </article>
